@@ -1,17 +1,6 @@
-// Function to initiate UPI transaction
-function initiateUPITransaction() {
-    const upiID = 'ruposi.8393@waaxis';  
-
-    // Create the UPI URL
-    const upiURL = `upi://pay?pa=${upiID}&cu=INR`;
-
-    // Redirect the user to the UPI URL
-    window.location.href = upiURL;
-}
-
 // Function to copy UPI ID to clipboard
 function copyUPIID() {
-    const upiID = 'ruposi.8393@waaxis'; 
+    const upiID = 'ruposi.8393@waaxis';  // Replace with your actual UPI ID
 
     // Create a temporary input element to copy the text
     const tempInput = document.createElement('input');
