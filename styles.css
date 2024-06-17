@@ -20,16 +20,15 @@ body {
 
 .profile-image-container {
     position: relative;
-    overflow: hidden;
-    border-radius: 50%;
+    /*overflow: hidden;*/
     width: 120px;
     height: 120px;
     margin: 0 auto;
-    z-index: 5;
 }
 
 .profile-image-overlay {
     position: absolute;
+    /*top: -50px;*/
     left: 50%;
     transform: translateX(-50%);
     background-color: #fff;
@@ -37,12 +36,15 @@ body {
     border: 5px solid #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    z-index: 1;
 }
 
 .profile-image {
     width: 120px;
     height: 120px;
     display: block;
+    position: relative;
+    z-index: 2;
 }
 
 .card-title {
@@ -96,8 +98,4 @@ body {
 }
 .footer a:hover {
     color: #dc3545; /* Hover color */
-}
-
-#upiID{ 
-    color: #33333390;
 }
